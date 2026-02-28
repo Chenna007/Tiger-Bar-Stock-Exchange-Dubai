@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiger Bar Stock Exchange Dubai | Sports Bar & Nightlife Al Jaddaf</title>
+  <meta name="description"
+    content="Tiger Bar Stock Exchange — Dubai's most electrifying sports bar and entertainment venue at Al Jaddaf. Live shows, craft cocktails, world-class food, pool tables, and stock-market style drinks pricing. Book your table now." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="keywords"
+    content="Tiger Bar Stock Exchange Dubai, sports bar Dubai, bar Al Jaddaf, nightlife Dubai, live entertainment Dubai, cocktail bar Dubai, pool table bar Dubai, Barcelo Al Jaddaf bar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tiger Bar Stock Exchange" />
+  <link rel="canonical" href="https://tigerbardxb.com/" />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Tiger Bar Stock Exchange Dubai" />
+  <meta property="og:description"
+    content="Dubai's wildest sports bar & entertainment venue. Live shows, craft cocktails, pool tables & dynamic pricing. Al Jaddaf, Dubai." />
+  <meta property="og:url" content="https://tigerbardxb.com/" />
+  <meta property="og:image" content="https://tigerbardxb.com/assets/photos/2022-11-27.webp" />
+  <meta name="theme-color" content="#0D0D0D" />
+  <link rel="alternate" href="https://tigerbardxb.com/" hreflang="en" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiger Bar Stock Exchange Dubai" />
+  <meta name="twitter:description"
+    content="Dubai's wildest sports bar. Live entertainment, craft cocktails, pool & dynamic pricing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <!-- Favicon: tiger emoji as inline SVG data URL -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Ctext y='75' font-size='72'%3E%F0%9F%90%AF%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Ctext y='75' font-size='72'%3E%F0%9F%90%AF%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a href="#home" class="skip-link" style="position:absolute;left:-999px;top:auto;">
+    Skip to main content
+  </a>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Ticker Tape -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="mainNav">
+    <a href="#" class="nav-logo">
+      <span style="font-size:24px">🐯</span> TIGER <span>BAR</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Gallery</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#cocktails">Drinks</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="javascript:void(0)" onclick="openReserveModal(event)" class="nav-cta">Reserve</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" role="button" aria-controls="mobileMenu" aria-expanded="false" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+    <a href="#experience" onclick="closeMobileMenu()">Gallery</a>
+    <a href="#shows" onclick="closeMobileMenu()">Shows</a>
+    <a href="#cocktails" onclick="closeMobileMenu()">Drinks</a>
+    <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+    <a href="javascript:void(0)" onclick="openReserveModal(event)" style="color:var(--gold)">Reserve Now ↗</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-bg-img"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">📍 Al Jaddaf, Dubai · Open Until 3 AM</p>
+      <h1 class="hero-title">
+        TIGER BAR
+        <span class="accent">STOCK EXCHANGE</span>
+      </h1>
+      <p class="hero-sub">Where the market never sleeps &nbsp;·&nbsp; Live shows &nbsp;·&nbsp; Craft cocktails
+        &nbsp;·&nbsp; Sports screens</p>
+      <div class="hero-actions">
+        <a href="javascript:void(0)" onclick="openReserveModal(event)" class="btn btn-gold">🍽 Reserve a Table</a>
+        <a href="https://wa.me/971565554626" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+        <a href="#experience" class="btn btn-outline">Explore →</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-number">4.4★</div>
+        <div class="hero-stat-label">Rating</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number" id="reviewCount">0</div>
+        <div class="hero-stat-label">Reviews</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">3AM</div>
+        <div class="hero-stat-label">Closing</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">∞</div>
+        <div class="hero-stat-label">Vibes</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-stack reveal">
+          <img loading="lazy" class="about-img-main" src="assets/photos/2022-11-27.webp"
+            alt="Tiger Bar luxurious interior" />
+          <img loading="lazy" class="about-img-accent" src="assets/photos/unnamed1.webp"
+            alt="Tiger Bar sports screens" />
+          <div class="about-badge">
+            <span class="about-badge-num">NO.1</span>
+            <span class="about-badge-text">Sports Bar<br>Al Jaddaf</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">SIP FIERCE.<br><span style="color:var(--gold)">STAY WILD.</span></h2>
+          <p>Tiger Bar Stock Exchange is Dubai's most electrifying entertainment destination — where the energy of a
+            live stock exchange meets the wild soul of a tiger. Located at Barceló Al Jaddaf, we redefine what a night
+            out looks like.</p>
+          <p>From jaw-dropping aerial performances to cocktails that trade at market prices, every visit is a new
+            experience. Women-owned, culture-forward, and unapologetically bold.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">Live Performances</span>
+            </div>
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">Stock Priced Drinks</span>
+            </div>
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">Pool Tables</span>
+            </div>
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">Giant Sports Screens</span>
+            </div>
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">Premium Shisha</span>
+            </div>
+            <div class="about-feature">
+              <div class="feature-dot"></div><span class="feature-label">World-Class Cuisine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU / STOCK BOARD ==================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="market-header reveal">
+        <div>
+          <p class="section-tag">Live Pricing</p>
+          <h2 class="section-title">THE <span style="color:var(--gold)">MARKET</span></h2>
+        </div>
+        <div class="market-status">
+          <div class="status-dot"></div>
+          MARKET OPEN · TRADING LIVE
+        </div>
+      </div>
+      <div class="market-board reveal">
+        <div class="market-board-header">
+          <span>Item</span>
+          <span>Price (AED)</span>
+          <span>Change</span>
+          <span>Chart</span>
+          <span>Status</span>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Tiger Special Cocktail</div>
+            <div class="item-category">SIGNATURE · COCKTAILS</div>
+          </div>
+          <div class="item-price">55</div>
+          <div class="item-change-up">▲ +12.5%</div>
+          <div class="spark-bar">
+            <div style="height:8px"></div>
+            <div style="height:14px"></div>
+            <div style="height:10px"></div>
+            <div style="height:20px"></div>
+            <div style="height:16px"></div>
+            <div style="height:24px"></div>
+          </div>
+          <div class="item-volume">🔥 HOT</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Peri Peri Chicken Wings</div>
+            <div class="item-category">STARTERS · FOOD</div>
+          </div>
+          <div class="item-price">62</div>
+          <div class="item-change-up">▲ +8.2%</div>
+          <div class="spark-bar">
+            <div style="height:12px"></div>
+            <div style="height:18px"></div>
+            <div style="height:14px"></div>
+            <div style="height:22px"></div>
+            <div style="height:20px"></div>
+            <div style="height:18px"></div>
+          </div>
+          <div class="item-volume">⭐ TOP</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Truffle Fries</div>
+            <div class="item-category">SIDES · FOOD</div>
+          </div>
+          <div class="item-price">45</div>
+          <div class="item-change-down">▼ -3.1%</div>
+          <div class="spark-bar">
+            <div style="height:20px"></div>
+            <div style="height:16px"></div>
+            <div style="height:12px"></div>
+            <div style="height:8px"></div>
+            <div style="height:10px"></div>
+            <div style="height:14px"></div>
+          </div>
+          <div class="item-volume">⬆ RISING</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Crystal Momos</div>
+            <div class="item-category">ASIAN FUSION · FOOD</div>
+          </div>
+          <div class="item-price">58</div>
+          <div class="item-change-up">▲ +15.6%</div>
+          <div class="spark-bar">
+            <div style="height:6px"></div>
+            <div style="height:12px"></div>
+            <div style="height:16px"></div>
+            <div style="height:20px"></div>
+            <div style="height:18px"></div>
+            <div style="height:24px"></div>
+          </div>
+          <div class="item-volume">🔥 HOT</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Chicken Alfredo Pasta</div>
+            <div class="item-category">MAINS · FOOD</div>
+          </div>
+          <div class="item-price">85</div>
+          <div class="item-change-up">▲ +4.4%</div>
+          <div class="spark-bar">
+            <div style="height:14px"></div>
+            <div style="height:16px"></div>
+            <div style="height:18px"></div>
+            <div style="height:16px"></div>
+            <div style="height:20px"></div>
+            <div style="height:18px"></div>
+          </div>
+          <div class="item-volume">⭐ TOP</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Rose Petal Champagne Fizz</div>
+            <div class="item-category">SPECIALTY · COCKTAILS</div>
+          </div>
+          <div class="item-price">75</div>
+          <div class="item-change-up">▲ +21.3%</div>
+          <div class="spark-bar">
+            <div style="height:8px"></div>
+            <div style="height:10px"></div>
+            <div style="height:14px"></div>
+            <div style="height:18px"></div>
+            <div style="height:22px"></div>
+            <div style="height:24px"></div>
+          </div>
+          <div class="item-volume">🚀 BULLISH</div>
+        </div>
+        <div class="market-row">
+          <div>
+            <div class="item-name">Choco Lava Cake</div>
+            <div class="item-category">DESSERTS · FOOD</div>
+          </div>
+          <div class="item-price">48</div>
+          <div class="item-change-down">▼ -1.8%</div>
+          <div class="spark-bar">
+            <div style="height:22px"></div>
+            <div style="height:18px"></div>
+            <div style="height:14px"></div>
+            <div style="height:16px"></div>
+            <div style="height:18px"></div>
+            <div style="height:20px"></div>
+          </div>
+          <div class="item-volume">⭐ TOP</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;text-align:center" class="reveal">
+        <a href="javascript:void(0)" onclick="openReserveModal(event)" class="btn btn-gold">View Full Menu & Reserve
+          ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-tag">Gallery</p>
+        <h2 class="section-title">THE <span style="color:var(--gold)">EXPERIENCE</span></h2>
+      </div>
+      <div class="exp-grid reveal">
+        <div class="exp-card">
+          <img loading="lazy" src="assets/photos/areal.webp" alt="Aerial performer at Tiger Bar Dubai" />
+          <div class="exp-card-overlay"></div>
+          <div class="exp-card-info">
+            <div class="exp-card-subtitle">Entertainment</div>
+            <div class="exp-card-title">Aerial Shows</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img loading="lazy" src="assets/photos/2025-07-11.webp" alt="Pool table room at Tiger Bar" />
+          <div class="exp-card-overlay"></div>
+          <div class="exp-card-info">
+            <div class="exp-card-subtitle">Games</div>
+            <div class="exp-card-title">Pool Tables</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img loading="lazy" src="assets/photos/unnamed.webp" alt="Tiger Bar live band stage" />
+          <div class="exp-card-overlay"></div>
+          <div class="exp-card-info">
+            <div class="exp-card-subtitle">Live Music</div>
+            <div class="exp-card-title">Live Performances</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img loading="lazy" src="assets/photos/pic1.webp" alt="Tiger Bar wide interior view" />
+          <div class="exp-card-overlay"></div>
+          <div class="exp-card-info">
+            <div class="exp-card-subtitle">Ambience</div>
+            <div class="exp-card-title">The Venue</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img loading="lazy"
+            src="https://plus.unsplash.com/premium_photo-1664298515793-1451ed489d95?q=80&w=1425&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Sports bar screens at Tiger Bar" />
+          <div class="exp-card-overlay"></div>
+          <div class="exp-card-info">
+            <div class="exp-card-subtitle">Sports</div>
+            <div class="exp-card-title">Giant Screens</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ENTERTAINMENT ==================== -->
+  <section class="entertainment" id="shows">
+    <div class="ent-bg"></div>
+    <div class="container">
+      <div class="ent-grid">
+        <div class="reveal">
+          <div class="ent-video-frame">
+            <video class="ent-embedded-video" autoplay muted loop playsinline preload="metadata"
+              poster="assets/photos/Freddyhcreator_11_25_2022_BARBAAR-118.webp">
+              <source src="assets/videos/live-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="section-tag">Nightly</p>
+          <h2 class="section-title" style="font-size:clamp(36px,4vw,64px)">LIVE EVERY<br><span
+              style="color:var(--gold)">NIGHT</span></h2>
+          <p style="color:var(--text-muted);font-size:15px;line-height:1.8;margin:20px 0 32px">From breathtaking aerial
+            performers suspended in giant martini glasses to live bands that shake the walls — Tiger Bar never stops
+            trading in pure entertainment.</p>
+          <div>
+            <div class="ent-perk">
+              <div class="ent-perk-icon">🎭</div>
+              <div>
+                <div class="ent-perk-title">Aerial Performances</div>
+                <div class="ent-perk-desc">Nightly aerial acts inside giant martini glass rigs with stunning lighting.
+                </div>
+              </div>
+            </div>
+            <div class="ent-perk">
+              <div class="ent-perk-icon">🎸</div>
+              <div>
+                <div class="ent-perk-title">Live Bands & DJs</div>
+                <div class="ent-perk-desc">World-class resident DJs and live bands keeping the energy until 3 AM.</div>
+              </div>
+            </div>
+            <div class="ent-perk">
+              <div class="ent-perk-icon">🎱</div>
+              <div>
+                <div class="ent-perk-title">Games Zone</div>
+                <div class="ent-perk-desc">Pool tables, ping pong, and gaming entertainment for all guests.</div>
+              </div>
+            </div>
+            <div class="ent-perk">
+              <div class="ent-perk-icon">📺</div>
+              <div>
+                <div class="ent-perk-title">Sports on Every Screen</div>
+                <div class="ent-perk-desc">Multiple giant LED screens covering every major sport event worldwide.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COCKTAILS ==================== -->
+  <section class="cocktails" id="cocktails">
+    <div class="container">
+      <div class="cocktails-inner">
+        <div class="cocktail-img reveal">
+          <video class="cocktail-embedded-video" autoplay muted loop playsinline preload="metadata"
+            poster="assets/photos/Freddyhcreator_11_25_2022_BARBAAR-44.webp">
+            <source src="assets/videos/live-video2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="reveal">
+          <p class="section-tag">Craft Cocktails</p>
+          <h2 class="section-title">LIQUID<br><span style="color:var(--gold)">GOLD</span></h2>
+          <p style="color:var(--text-muted);font-size:15px;line-height:1.8;margin:20px 0 32px">Our bartenders are
+            alchemists. Every cocktail is a performance — from rose petal champagne fizzes to signature tiger-themed
+            concoctions that look as spectacular as they taste.</p>
+          <div>
+            <div class="cocktail-card">
+              <div class="cocktail-card-icon">🌹</div>
+              <div>
+                <div class="cocktail-card-name">Rose Petal Fizz</div>
+                <div class="cocktail-card-desc">Champagne · Elderflower · Dried rose petals</div>
+              </div>
+              <div class="cocktail-card-price">AED 75</div>
+            </div>
+            <div class="cocktail-card">
+              <div class="cocktail-card-icon">🐯</div>
+              <div>
+                <div class="cocktail-card-name">Tiger's Blood</div>
+                <div class="cocktail-card-desc">Rum · Coconut · Strawberry · Passion fruit</div>
+              </div>
+              <div class="cocktail-card-price">AED 65</div>
+            </div>
+            <div class="cocktail-card">
+              <div class="cocktail-card-icon">💎</div>
+              <div>
+                <div class="cocktail-card-name">Stock Market Martini</div>
+                <div class="cocktail-card-desc">Vodka · Blue curaçao · Lemon · Dynamic price</div>
+              </div>
+              <div class="cocktail-card-price">AED 55+</div>
+            </div>
+            <div class="cocktail-card">
+              <div class="cocktail-card-icon">🥂</div>
+              <div>
+                <div class="cocktail-card-name">Midnight Bull Run</div>
+                <div class="cocktail-card-desc">Whisky · Honey · Ginger beer · Smoked</div>
+              </div>
+              <div class="cocktail-card-price">AED 70</div>
+            </div>
+          </div>
+          <div style="margin-top:32px">
+            <a href="https://www.zomato.com/dubai/tiger-bar-stock-exchange-al-jaddaf" target="_blank"
+              class="btn btn-gold">Full Drinks Menu ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOD SPOTLIGHT ==================== -->
+  <section style="background:var(--dark3);padding:120px 0">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px" class="reveal">
+        <p class="section-tag" style="justify-content:center">Kitchen</p>
+        <h2 class="section-title">FOOD THAT<br><span style="color:var(--gold)">TRADES HIGH</span></h2>
+      </div>
+      <div class="food-grid reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
+          <img loading="lazy" src="assets/photos/unnamed2.webp" alt="Tiger Bar truffle fries"
+            style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+          <div
+            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(5,5,5,0.9));padding:24px">
+            <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold)">SIDES</div>
+            <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Truffle Fries</div>
+          </div>
+        </div>
+        <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
+          <img loading="lazy" src="assets/photos/2020-09-02.webp" alt="Tiger Bar crystal momos"
+            style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+          <div
+            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(5,5,5,0.9));padding:24px">
+            <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold)">ASIAN
+              FUSION</div>
+            <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Crystal Momos</div>
+          </div>
+        </div>
+        <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
+          <img loading="lazy" src="assets/photos/2020-07-30.webp" alt="Tiger Bar signature chicken"
+            style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+          <div
+            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(5,5,5,0.9));padding:24px">
+            <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold)">MAINS</div>
+            <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Signature Chicken</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REVIEWS ==================== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:8px" class="reveal">
+        <p class="section-tag" style="justify-content:center">What People Say</p>
+        <h2 class="section-title">THE <span style="color:var(--gold)">VERDICT</span></h2>
+        <p
+          style="color:var(--text-muted);font-size:13px;font-family:'DM Mono',monospace;margin-top:12px;letter-spacing:2px">
+          ★★★★☆ 4.4 · 2,868 REVIEWS ON GOOGLE</p>
+      </div>
+      <div class="reviews-grid reveal">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <div class="review-text">Tiger Bar Stock is an amazing place! The waiters were extremely attentive and made us
+            feel very welcome. The atmosphere is unlike anything else in Dubai.</div>
+          <div class="review-author">Yung G.</div>
+          <div class="review-role">Local Guide · 2 weeks ago</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <div class="review-text">A great place to chill with curated cocktails and delicious food. The peri peri
+            chicken wings and choco lava cake are absolutely incredible.</div>
+          <div class="review-author">Anjali S. K.</div>
+          <div class="review-role">Local Guide · 148 reviews</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <div class="review-text">Excellent food, amazing service, and fantastic atmosphere! I absolutely loved my
+            visit to Tiger Bar Stock Exchange. Easily one of Dubai's best venues.</div>
+          <div class="review-author">Kristian H.</div>
+          <div class="review-role">Local Guide · 4 months ago</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="https://www.google.com/maps/place/Tiger+Bar+Stock+Exchange" target="_blank"
+          class="btn btn-outline">Read All 2,868 Reviews ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BAND ==================== -->
+  <div class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <div class="cta-title">READY TO<br>TRADE UP?</div>
+          <p
+            style="font-size:13px;color:rgba(0,0,0,0.6);margin-top:8px;font-family:'DM Mono',monospace;letter-spacing:2px">
+            BARCELÓ AL JADDAF · OPEN UNTIL 3 AM</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="javascript:void(0)" onclick="openReserveModal(event)" class="btn-black">🍽 Reserve Now</a>
+          <a href="https://wa.me/971565554626" target="_blank" class="btn-wapp-black">💬 WhatsApp</a>
+          <a href="https://www.instagram.com/tigerbardxb/" target="_blank" class="btn-wapp-black">📸 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="font-size:32px;margin-bottom:16px;display:inline-flex">
+            <span style="font-size:28px">🐯</span> TIGER <span>BAR</span>
+          </a>
+          <p>Dubai's most electrifying sports bar and entertainment venue. Where every night is a new trade in fun,
+            flavor, and unforgettable memories.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/tigerbardxb/" target="_blank" class="social-btn">📸</a>
+            <a href="https://wa.me/971565554626" target="_blank" class="social-btn">💬</a>
+            <a href="https://www.zomato.com/dubai/tiger-bar-stock-exchange-al-jaddaf" target="_blank"
+              class="social-btn">🍽</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#experience">Gallery</a></li>
+            <li><a href="#shows">Entertainment</a></li>
+            <li><a href="#cocktails">Cocktails</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><a href="#">Mon–Thu: 4PM – 2AM</a></li>
+            <li><a href="#">Fri–Sat: 4PM – 3AM</a></li>
+            <li><a href="#">Sunday: 4PM – 2AM</a></li>
+            <li><a href="#" style="color:var(--gold)">Happy Hour: 4–8PM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <address>
+            <strong>Tiger Bar Stock Exchange</strong><br>
+            Located in Barceló Al Jaddaf<br>
+            Al Jadaf – Dubai, UAE<br><br>
+            <a href="tel:+971565554626" style="color:var(--gold);text-decoration:none;">📞 056 555 4626</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tiger Bar Stock Exchange Dubai · All rights reserved</p>
+        <div class="footer-rating">★★★★☆ 4.4 · 2,868 Reviews</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="float-buttons">
+    <a href="javascript:void(0)" onclick="openReserveModal(event)" class="float-btn zomato"
+      title="Reserve a Table">🍽</a>
+    <a href="https://www.instagram.com/tigerbardxb/" target="_blank" class="float-btn instagram"
+      title="Instagram">📸</a>
+    <a href="https://wa.me/971565554626" target="_blank" class="float-btn whatsapp" title="WhatsApp">💬</a>
+  </div>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close reservation form">✕</button>
+      <div class="modal-header">
+        <h2 class="modal-title">RESERVE A <span style="color:var(--gold)">TABLE</span></h2>
+        <p class="modal-subtitle">Join us for an unforgettable night at Tiger Bar</p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST" class="reserve-form" id="reserveForm">
+        <!-- Web3Forms Access Key (User will add later) -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New Table Reservation - Tiger Bar Dubai">
+        <input type="hidden" name="from_name" value="Tiger Bar Reservation">
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Contact Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="+971 50 000 0000" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Reservation Date</label>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" name="time" id="time" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of People</label>
+            <input type="number" name="guests" id="guests" min="1" max="20" placeholder="2" required>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top:20px;">
+          <label for="requests">Special Requests</label>
+          <textarea name="requests" id="requests" rows="3"
+            placeholder="Occasion, dietary preferences, or specific seating requests..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width:100%; margin-top:24px; justify-content:center;">
+          Confirm Reservation
+        </button>
+
+        <p class="form-notice">We will contact you via WhatsApp or Phone to confirm your booking.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Tiger Bar Stock Exchange",
+  "description": "Dubai's most electrifying sports bar and entertainment venue at Al Jaddaf, featuring live performances, craft cocktails, pool tables, and dynamic stock market style pricing.",
+  "url": "https://tigerbardxb.com",
+  "telephone": "+971565554626",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Barceló Al Jaddaf",
+    "addressLocality": "Al Jadaf",
+    "addressRegion": "Dubai",
+    "addressCountry": "AE"
+  },
+  "openingHours": ["Mo-Th 16:00-02:00", "Fr-Sa 16:00-03:00", "Su 16:00-02:00"],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "2868"
+  },
+  "sameAs": [
+    "https://www.instagram.com/tigerbardxb/",
+    "https://www.zomato.com/dubai/tiger-bar-stock-exchange-al-jaddaf"
+  ]
+}
+</script>
+
+  <!-- Small attribution footer -->
+  <footer aria-hidden="false"
+    style="background:transparent;border-top:none;padding:8px 0;margin-top:12px;text-align:center;color:var(--text-muted);font-family:'DM Mono',monospace;">
+    Created by <a href="https://ckr-studios.vercel.app/" target="_blank"
+      style="color:inherit;text-decoration:none;">ckrstudios</a>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+# create .gitignore
+Set-Content -Path .gitignore -Value @'
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+
+# Large media (if you prefer not to commit videos)
+assets/videos/
+*.mp4
+*.mov
+'@
+git add .gitignore
